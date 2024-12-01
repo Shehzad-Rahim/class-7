@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Link from "next/link";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,10 +28,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <nav className="flex justify-center gap-20 bg-blue-500 text-xl text-white font-bold p-4">
-        <Link href={"cssGrid"}>Css Grid</Link>
-        <Link href={"tailwindGrid"}>Tailwind Grid</Link>
-    </nav>
+        
         {children}
       </body>
     </html>
